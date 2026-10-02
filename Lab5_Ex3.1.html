@@ -3,32 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographic và Video YouTube</title>
+    <title>Trang giới thiệu cá nhân</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #1976d2;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1976d2;
+            padding-bottom: 8px;
+        }
+
+        .info p {
+            margin: 8px 0;
+        }
+
+        .product {
+            margin-top: 20px;
+        }
+
+        .product h3 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .pdf {
+            height: 500px;
+        }
+
+        .video {
+            height: 400px;
+        }
+
+        .image {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background: #1976d2;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Infographic và Video Youtube</h1>
-        <p>Trang web giới thiệu infographic và video YouTube được thực hiện trong nhiệm vụ 2 của Lab05.</p>
 
-<p><strong>Trần Ngọc Vy:</strong> Trần Ngọc Vy </p>
-<p><strong>B2605395:</strong> B2605395</p>
-<p><strong>DI26D1A2:</strong> DI26D1A2</p>
+    <header>
+        <h1>TRANG GIỚI THIỆU CÁ NHÂN</h1>
+        <p>Chào mừng bạn đến với trang web của tôi</p>
+    </header>
 
-    <h2>Infographic</h2>
-    <img src="Lab05_Ex2.1.png.png"
-         alt="Infographic"
-         width="600">
+    <div class="container">
 
-    <h2>Video YouTube</h2>
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/hDDrG2ilwGg?si=9iNCp72Fxgbtu2i4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-    </iframe>
-    <hr>
-<p>© 2026 - Nội dung phục vụ mục đích học tập.</p>
+        <!-- Thông tin cá nhân -->
+        <section class="card">
+            <h2>Thông tin cá nhân</h2>
+
+            <div class="info">
+                <p><strong>Trần Ngọc Vy:</strong> Trần Ngọc Vy</p>
+                <p><strong>B2605395:</strong> B2605395</p>
+                <p><strong>DI26D1A2:</strong> DI26D1A2</p>
+                <p>
+                    <strong>Giới thiệu:</strong>
+                    Tôi là một sinh viên đang học tập và rèn luyện các kỹ năng
+                    trong lĩnh vực công nghệ thông tin. Tôi luôn cố gắng học hỏi
+                    những kiến thức mới và hoàn thiện bản thân.
+                </p>
+            </div>
+        </section>
+
+        <!-- Danh mục sản phẩm -->
+        <section class="card">
+            <h2>Danh mục sản phẩm</h2>
+
+            <!-- File PDF -->
+            <div class="product">
+                <h3>1. Bài tập PDF</h3>
+
+                <iframe
+                    class="pdf"
+                    src="Lab05_Ex1.2.pdf">
+                </iframe>
+            </div>
+
+            <!-- File PNG -->
+            <div class="product">
+                <h3>2. Infographic</h3>
+
+                <img
+                    class="image"
+                    src="Lab05_Ex2.1.png.png"
+                    alt="Infographic">
+            </div>
+
+            <!-- Video YouTube -->
+            <div class="product">
+                <h3>3. Video YouTube</h3>
+
+                <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/hDDrG2ilwGg"
+                    title="Video YouTube"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Trang giới thiệu cá nhân</p>
+    </footer>
+
 </body>
 </html>
